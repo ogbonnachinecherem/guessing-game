@@ -1,12 +1,13 @@
 
-    font-family: {sans-serif;
-    }
+    
       
-        body {
+    body {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
+      box-sizing: border-box;
+     /* font-family: sans-serif;*/
     }	
 	#para {
 		font-size: 30px;
@@ -16,15 +17,16 @@
 		text-align: center;
 	}
 	#main {
-		width: 50%;
+		width: 500px;
 		background-color: yellow;
 		 padding: 60px;
 		 border: 3px solid #000000;
 		 min-height: 250px;
 	}
 	.form {
+		
+		width: 500px;
 		margin: auto;
-		width: 70%;
 	}
 	#submitguess {
 		border-radius: 20px;
@@ -35,6 +37,14 @@
 		margin-left: 180px;
 		margin-top: 20px;
 		margin-right: 15px;
+
+	}
+	#submitguess:hover  {
+		background-color: white;
+		color: black;
+		border: 3px solid white;
+		cursor: pointer;
+		
 	}
 	#guessField {
 		width: 300px;
@@ -43,11 +53,56 @@
 		background-color: whitesmoke;
 		color: black;
 	}
+	#guessField:hover {
+		background-color: lightgray;
+	}
+
 	#btn {
 		width: 100px;
 		color: black;
 		background-color: white;
 		border-radius: 20px;
 		padding: 10px 15px;
-		border-color: white;
+		border: 3px solid white;
+		
+	}
+	#btn:hover {
+		color: white;
+		background-color: black;
+		border: 3px solid black;
+		cursor: pointer;
+	}
+	
+
+	@media screen and (max-width: 600px) {
+    
+     #ent {
+     	padding-left: 30px;
+     }
+	}
+	@media screen and (max-width: 414px) {
+    
+     #ent {
+     	padding-left: 60px;
+     }
+     #para {
+     	padding-left: 50px;
+     }
+	}
+	@media screen and (max-width: 360px) {
+    
+     #ent {
+     	margin-left: 50px;
+     }
+     #para {
+     margin-left: 30px;
+
+     }
+     #guessField {
+		width: 200px;
+	}
+	#submitguess {
+		margin-left: 235px;
+	}
+	
 	}
